@@ -1,8 +1,10 @@
 <div align="center">
 
-# 🚀 NmapX
+<img src="https://www.kali.org/images/kali-logo.svg" width="220">
 
-### Simple • Fast • Automated Nmap Scanning with Bash
+#  NMAPX
+
+### Automated Nmap Scanning Made Simple
 
 <p align="center">
 
@@ -20,6 +22,26 @@
 
 <p align="center">
 
+<a href="https://github.com/maahi-coder/NmapX">
+<img src="https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github">
+</a>
+
+<a href="https://github.com/maahi-coder/NmapX/stargazers">
+<img src="https://img.shields.io/badge/Give_A_Star-FFD700?style=for-the-badge">
+</a>
+
+<a href="https://github.com/maahi-coder/NmapX/issues">
+<img src="https://img.shields.io/badge/Report_Issue-red?style=for-the-badge">
+</a>
+
+<a href="https://github.com/maahi-coder/NmapX/fork">
+<img src="https://img.shields.io/badge/Fork_Project-blue?style=for-the-badge">
+</a>
+
+</p>
+
+<p align="center">
+
 ![Stars](https://img.shields.io/github/stars/maahi-coder/NmapX?style=for-the-badge)
 
 ![Forks](https://img.shields.io/github/forks/maahi-coder/NmapX?style=for-the-badge)
@@ -32,61 +54,94 @@
 
 ---
 
-## 📖 About
+# 🎯 About NMAPX
 
-NmapX is a Bash-based Nmap automation tool created as part of my cybersecurity learning journey.
+NMAPX is a Bash-based Nmap automation tool built during my cybersecurity learning journey.
 
-While practicing network reconnaissance, I found myself repeatedly typing the same Nmap commands. To improve my Bash scripting skills and automate repetitive tasks, I built NmapX.
+While practicing reconnaissance and enumeration, I noticed that I repeatedly executed the same Nmap commands.
 
-The tool provides a simple interface, colorful output, automatic report generation, and multiple scan types without requiring users to remember complex commands.
+Instead of manually running every scan one by one, I decided to automate the process using Bash scripting and create a lightweight tool that performs multiple scans automatically while saving the results in an organized structure.
 
----
+This project helped me learn:
 
-## ✨ Features
-
-* 🎨 Custom ASCII Banner
-* ⚡ Fast Nmap Automation
-* 📂 Automatic Folder Creation
-* 💾 Automatic Scan Result Saving
-* 🌐 Normal Nmap Scan
-* 🔍 Service Version Detection
-* 🛠 NSE Script Scan
-* 🐧 Linux Friendly
-* 📖 Beginner Friendly
+* Linux
+* Bash Scripting
+* Automation
+* Nmap
+* File Handling
+* Basic Cybersecurity Workflow
 
 ---
 
-## 🔍 Available Scans
+# ⚡ Features
 
-### Normal Scan
+✅ Beautiful Custom Banner
+
+✅ Colorful Terminal Output
+
+✅ Nmap Dependency Checking
+
+✅ Automatic Folder Creation
+
+✅ Automatic Report Generation
+
+✅ Normal Nmap Scan
+
+✅ Service Version Detection
+
+✅ NSE Script Scan
+
+✅ Beginner Friendly
+
+✅ Lightweight
+
+---
+
+# 🔍 Scan Modules
+
+## 1️⃣ Normal Scan
 
 ```bash
 nmap <target>
 ```
 
-Discovers open ports and basic network information.
+Discovers:
 
-### Service Version Detection
+* Open Ports
+* Running Services
+* Basic Host Information
+
+---
+
+## 2️⃣ Version Detection Scan
 
 ```bash
 nmap -sV <target>
 ```
 
-Detects versions of running services.
+Detects:
 
-### NSE Script Scan
+* Service Versions
+* Software Information
+
+---
+
+## 3️⃣ NSE Script Scan
 
 ```bash
 nmap -sC <target>
 ```
 
-Runs Nmap's default NSE scripts.
+Runs:
+
+* Default Nmap Scripts
+* Basic Enumeration Scripts
 
 ---
 
-## 📂 Output Structure
+# 📂 Generated Output
 
-After scanning a target, NmapX automatically creates a folder and stores reports:
+After scanning a target:
 
 ```text
 8.8.8.8/
@@ -95,31 +150,31 @@ After scanning a target, NmapX automatically creates a folder and stores reports
 └── scriptscan.txt
 ```
 
-No need to manually save scan results.
+Each scan result is automatically saved for future analysis.
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-Clone the repository:
+Clone Repository:
 
 ```bash
 git clone https://github.com/maahi-coder/NmapX.git
 ```
 
-Move into the project directory:
+Move Into Directory:
 
 ```bash
 cd NmapX
 ```
 
-Give execute permission:
+Make Script Executable:
 
 ```bash
 chmod +x networkchunk.bash
 ```
 
-Run the tool:
+Run Tool:
 
 ```bash
 ./networkchunk.bash
@@ -127,7 +182,7 @@ Run the tool:
 
 ---
 
-## 📸 Preview
+# 🖥 Preview
 
 ```text
  ██████   █████                                     █████ █████
@@ -141,58 +196,61 @@ Run the tool:
 
 ---
 
-## 🎯 Why I Built This
-
-This project was created to:
-
-* Learn Bash scripting
-* Automate repetitive Nmap commands
-* Practice Linux fundamentals
-* Improve cybersecurity skills
-* Build real projects while learning
-
-Rather than only watching tutorials, I wanted to learn by building something useful.
-
----
-
-## 🛣 Roadmap
+# 🛣 Roadmap
 
 * [ ] Ping Scan
 * [ ] OS Detection
-* [ ] Menu-Based Interface
-* [ ] Timestamped Reports
-* [ ] Custom Scan Selection
+* [ ] Full Port Scan
+* [ ] UDP Scan
+* [ ] Menu Based Interface
+* [ ] Export Reports
+* [ ] Timestamped Results
+* [ ] Advanced NSE Modules
 * [ ] Better Error Handling
-* [ ] Additional NSE Scan Modules
 
 ---
 
-## ⚠️ Disclaimer
+# 🧠 Why This Project Exists
+
+I believe the best way to learn cybersecurity is by building.
+
+Instead of only watching videos or reading documentation, I wanted to create something practical.
+
+NMAPX started as a small Bash scripting exercise and slowly became one of my first cybersecurity automation projects.
+
+---
+
+# ⚠ Disclaimer
 
 This tool is intended for:
 
 * Educational Purposes
-* Personal Labs
-* Authorized Security Testing
+* Home Labs
+* Personal Learning
+* Authorized Security Assessments
 
-Always obtain permission before scanning any network or system.
+Always obtain proper authorization before scanning systems or networks.
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-### Mahi Mahenthiran
+## Mahi Mahenthiran
 
-Cybersecurity Student • Cloud Security Learner • Bash Scripting Enthusiast
+Cybersecurity Student
 
-> "Every expert was once a beginner. NmapX is one of the projects I built while learning cybersecurity and automation."
+Cloud Security Learner
+
+Bash Scripting Enthusiast
+
+Future Security Engineer
 
 ---
 
 <div align="center">
 
-### ⭐ If you found this project useful, consider giving it a star.
+## ⭐ If you found this project useful, consider giving it a star.
 
-### 🚀 More features coming soon.
+### Thank you for visiting NMAPX 🚀
 
 </div>
