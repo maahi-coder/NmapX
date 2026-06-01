@@ -40,6 +40,17 @@ then
 
 read -p  "[+] enter your target ip address (ex:8.8.8.8) :" scan 
 
+echo "[+] checking NMAP tool ....."
+
+echo "[+] install nmap tool "
+
+echo -e "${GREEN}"
+
+sudo apt install nmap -y 
+
+echo -e "${NC}"
+
+
 echo "[+] creating folder ...."
 
 mkdir $scan
