@@ -40,13 +40,26 @@ then
 
 read -p  "[+] enter your target ip address (ex:8.8.8.8) :" scan 
 
-echo "[+] checking NMAP tool ....."
-
-echo "[+] install nmap tool "
-
 echo -e "${GREEN}"
 
-sudo apt install nmap -y 
+if command -v nmap &> /dev/null
+
+
+then
+
+    echo "[+] Nmap already installed."
+
+else
+
+    echo "[-] Nmap not found."
+
+    echo "[+] Installing Nmap..."
+
+    sudo apt update
+
+    sudo apt install nmap -y
+
+fi
 
 echo -e "${NC}"
 
